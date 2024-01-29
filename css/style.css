@@ -1,0 +1,863 @@
+/*Common CSS-------------------------------------*/
+#logo { grid-area: logo; }
+#menu { grid-area: menu; }
+#user-icons { grid-area: icons; }
+#page-header {grid-area: header;}
+.alert { grid-area: alert; }
+#container {grid-area: container;}
+#item { grid-area: item; }
+#big-image { grid-area: bigImage; }
+#details {grid-area: details;}
+#lesson-boxes {grid-area: lesson;}
+#yogalessons {grid-area: yogalessons;}
+#welcome { grid-area: welcome; }
+#carousel {grid-area: carousel;}
+#diet-boxes{grid-area: dietboxes;}
+#content-boxes { grid-area: content-boxes; }
+#shop {grid-area: shop;}
+#reviews-header {grid-area: reviews-header; }
+#reviews { grid-area: reviews; }
+#report { grid-area: report; }
+#wireframe { grid-area: wireframe; }
+#big-wireframe {grid-area: bigwireframe;}
+#welcome2 { grid-area: welcome2; }
+#wireframephone { grid-area: wireframephone; }
+#big-wireframephone {grid-area: bigwireframephone;}
+#sitemap {grid-area: sitemap;}
+
+
+.grid-container-index {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+      'alert alert alert alert'
+      'logo header header icons'
+      'menu menu menu menu'
+      'container container container container'
+      'shop bigImage bigImage item'
+      'details details details details'
+      'lesson lesson lesson lesson'
+      'welcome welcome welcome welcome'
+      'carousel carousel carousel carousel'
+      'yogalessons yogalessons yogalessons yogalessons'
+      'dietboxes dietboxes dietboxes dietboxes'
+      'content-boxes content-boxes content-boxes content-boxes'
+      'reviews-header reviews-header reviews-header reviews-header'
+      'reviews reviews reviews reviews'
+      'report report report report'
+      'wireframe bigwireframe bigwireframe bigwireframe'
+      'welcome2 welcome2 welcome2 welcome2'
+      'wireframephone bigwireframephone bigwireframephone bigwireframephone'
+      'sitemap sitemap sitemap sitemap'
+      'footer footer footer footer';
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: white;
+    height: 100%;
+    font-family: Georgia, serif;
+    width: 10000px;
+    max-width: 98%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width: 3px;
+    margin: auto;    
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+h2 h3 h4 {
+    font-family: Georgia, serif;
+    color: rgb(55, 175, 211);
+    margin-top: 1px;
+}
+
+
+p {
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    color:  black;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: whitesmoke;
+  }
+  
+  .facebook {
+    background: #6388d8;
+    color: white;
+  }
+
+  .instagram {
+    background: #ee54a6;
+    color: white;
+  }
+
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .phone {
+    background: #e49d32;
+    color: white;
+  }
+
+  .email {
+    background: #00bbb2;
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    div.grid-container-index{
+      font-size: 10px;
+    }
+  }
+
+/*Login CSS---------------------------------------*/
+
+#logo {
+    padding: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #63c3e9;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+
+button:hover {
+opacity: 0.7;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgba(235, 126, 245, 0.534);
+}
+
+/* Center the image and position the close button */
+.imgcontainer{
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+.imgcontainer h4{
+text-align: center;
+}
+
+img.loginicon {
+width: 8%;
+border-radius: 30%;
+}
+
+.container {
+padding: 16px;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+position:relative;
+right: 25px;
+top: 0;
+color: #000;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.8s;
+animation: animatezoom 0.8s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*Top Bar CSS---------------------------------------*/
+
+.top-bar {
+    padding: 15px;
+    background: rgb(55, 175, 211);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#page-header {
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 0px;
+} 
+
+#user-icons img {
+    padding-left: 30;
+    margin: 10px;
+    cursor: pointer;
+    transform: scale(1.25);
+    transition: 0.5s linear;
+}
+
+#user-icons img:hover {
+    transform: scale(1.45);
+    transition: 0.5s linear;
+}
+
+#menu a {
+    padding-left: 0;
+    margin-bottom: 10;
+    border-bottom: 1px solid #eee;
+    list-style: none;
+    position: relative;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(32, 29, 29);
+    
+}
+
+#menu a:hover {
+    
+    color: #777;
+    text-decoration: none;
+    background-color: transparent;
+    text-decoration: none;
+    background-color: #eee;
+}
+
+
+/*Index.html CSS--------------------------------------*/
+.alert {
+    padding: 3px 3px 3px 3px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ecf844;
+    color: rgb(223, 39, 39);
+    font-size:2vw;
+  }
+
+  
+  .close:hover {
+    color: black;
+  }
+
+#welcome {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    background-color: rgba(235, 126, 245, 0.534);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#content-boxes {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px 15px;
+}
+
+#content-boxes img {
+    width: calc(100% - 30px);
+    height: auto;
+}
+
+#content-boxes img:hover {
+    cursor: pointer;
+    opacity: 0.8; 
+    transform: scale(1.02); 
+}
+
+#content-boxes p, h2{
+    text-align: left;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    padding: 6px 6px;
+    margin-top: 1px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(55, 175, 211);
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.7s linear;
+}
+
+.container{
+    margin-bottom: 20px;
+}
+
+.read-more:hover, 
+.book-now:hover {
+    background: rgb(187, 98, 228);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s linear;
+}
+
+/*Yoga Poses CSS------------------------------------*/
+
+.croppose-img {
+    width: 400px;
+    height: 300px;
+}
+
+.container h4{
+    width: fit-content;
+    padding: 15px;
+}
+
+#content_right h1,h3{
+    text-align: center;
+}
+
+
+/*Online Class CSS------------------------------------*/
+.lesson-vidoe1 { grid-area: lesson-video1; }
+.lesson-description1 { grid-area: lesson-description1; }
+
+#lesson-boxes {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'lesson-video1' 
+    'lesson-description1';
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: black;  
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    text-align:center;
+    
+}
+
+.lesson-text {
+    text-align: center;
+}
+
+.yogaclass1 { grid-area: yogaclass1}
+.yogaclass2 { grid-area: yogaclass2}
+.yogaclass3 { grid-area: yogaclass3}
+.yogaclass-description1 { grid-area: yogaclass-description1; }
+.yogaclass-description2 { grid-area: yogaclass-description2; }
+.yogaclass-description3 { grid-area: yogaclass-description3; }
+
+#yogalessons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    'yogaclass1 yogaclass2 yogaclass3'
+    'yogaclass-description1 yogaclass-description2 yogaclass-description3';
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.yogaclass1 .yogaclass2 .yogaclass3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.lesson-video1 iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+.yogaclass-description1 .yogaclass-description2 .yogaclass-description3 {
+    padding-top: 0px;
+}
+
+#yogalessons img:hover {
+    opacity: 0.8; 
+    transform: scale(1.02); 
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    transition: 0.8s ease;
+}
+
+/*Healthy Diet CSS------------------------------------*/
+
+.diet-vidoe1 { grid-area: diet-video1; }
+.diet-description1 { grid-area: diet-description1; }
+.diet-video2 { grid-area: diet-video2; }
+.diet-description2 { grid-area: diet-description2; }
+.diet-video3 { grid-area: diet-video3; }
+.diet-description3 { grid-area: diet-description3; }
+.diet-video4 { grid-area: diet-video4; }
+.diet-description3 { grid-area: diet-description4; }
+
+#diet-boxes {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'diet-video1'
+    'diet-description1'
+    'diet-video2'
+    'diet-description2'
+    'diet-video3' 
+    'diet-description3'
+    'diet-video4' 
+    'diet-description4';
+    padding: 10px 10px;
+    text-align: center;
+    color: black;  
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.diet-description1,
+.diet-description2,
+.diet-description3,
+.diet-description4 {
+    width: 100%;
+    height: 100%;
+}
+
+
+.diet-text h2 p {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*Shop CSS------------------------------------*/
+
+#shop {
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    align-self: stretch;
+}
+
+.shop-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: 100%;
+}
+
+.crop-img {    
+    width: 100%;
+    height: calc(25% - 6px);
+    margin-bottom: 8px;
+    border: dotted;
+    cursor: pointer;
+    display: block;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.crop-img:hover {
+    opacity: 0.7; 
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    transition: 1s ease;
+}
+
+.crop-img:last-child {
+    margin-bottom: 0;
+}
+
+#big-image{
+    margin-bottom: 10px;
+}
+#big-image img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border: double;
+}
+
+#item {
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    align-self: stretch;
+}
+
+.item-jump p,
+.item-intro {
+    padding: 3px;
+    text-align: center;
+    margin-top: 50%;
+    margin: 20%; 
+    border-radius: 5px;
+    background: rgb(55, 175, 211);
+    color: white;
+}
+
+.item-jump p:hover {
+    background: rgb(187, 98, 228);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s linear;
+}
+
+#changecolor,
+#color h3 {
+    padding: 1px;
+    text-align: center;
+    background: rgb(55, 175, 211);
+    border-radius: 2px;
+    color: white;
+}
+
+#color h3:hover{
+    background:yellow ;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+
+
+#reviews-header { grid-area: reviews-header; }
+#review-image1 { grid-area: review-image1}
+#review-image2 { grid-area: review-image2}
+#review-image3 { grid-area: review-image3}
+#review-description1 { grid-area: review-description1; }
+#review-description2 { grid-area: review-description2; }
+#review-description3 { grid-area: review-description3; }
+
+#reviews {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    'reviews-header reviews-header reviews-header'
+    'review-image1 review-image2 review-image3'
+    'review-description1 review-description2 review-description3';
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#reviews-header {
+    background-color: rgba(235, 126, 245, 0.534);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+
+#review-image1, #review-image2, #review-image3 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+
+#footer1 { grid-area: footer1; }
+#footer2 { grid-area: footer2; }
+#footer3 { grid-area: footer3; }
+
+#footer {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: 'footer1 footer2 footer3';
+    background-color: rgb(55, 175, 211);
+    padding: 20px 20px;
+    text-align: left;
+    font-size: 12px;
+    color: white;  
+}
+
+#footer1 > a:first-child{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#footer2 a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s linear;
+}
+
+#footer2 a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer2 a:hover {
+    color: rgb(23, 42, 125);
+    text-decoration: none;
+}
+
+#footer3 a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer3 a:hover {
+    color: rgb(23, 42, 125);
+    text-decoration: none;
+}
+
+
+/*Wireframe CSS------------------------------------*/
+#wireframe {
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    align-self: stretch;
+}
+
+.wireframe-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: 30%;
+}
+
+.crop-wireframe {    
+    width: 80%;
+    height: calc(45% - 6px);
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: block;
+    object-fit: cover;
+    transition: .5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    border: dotted;
+}
+
+.wireframe-title{    
+    text-align: center;
+    background-color: steelblue;
+}
+
+.crop-wireframe:hover {
+    opacity: 0.7; 
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    transition: 1s ease;
+}
+
+#big-wireframe{
+    margin-bottom: 10px;
+    border: double;
+}
+
+#big-wireframe img{
+   height: 100%;
+   width: auto;
+   object-fit: cover;
+}
+#welcome2 {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    background-color: rgba(235, 126, 245, 0.534);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#big-wireframephone img{
+    margin-bottom: 10px;
+    border: double;
+}
+
+#wireframephone {
+    padding-right: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    align-self: stretch;
+}
+
+.wireframephone-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+    height: 30%;
+}
+
+
+/*Report CSS------------------------------------*/
+.subtitle{
+    font-style: italic;
+}
+
+reporttext p{
+    text-align: center;
+}
+
+#sitemap img{
+    width: 40%;
+    height: auto;
+}
+
+#web img{
+    width: 240px;
+    height: auto;
+}
+
+#sitemap :hover{
+    transform: scale(1.05); 
+    transition: 1s ease;
+}
+
+#web :hover{
+    transform: scale(1.05); 
+    transition: 1s ease;
+}
+
+#phone img{
+    width: 200px;
+    height: auto;
+}
+
+#phone :hover{
+    transform: scale(1.05); 
+    transition: 1s ease;
+}
+
+#mockup img{
+    width: 100%;
+    height: auto;
+}
+
+
+.image-source-link {
+	color: #98C3D1;
+}

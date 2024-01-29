@@ -1,0 +1,150 @@
+<!-- 
+University of London
+Web Development (CM1040)
+
+Project Name: Yoga newsletter Yoga Mind 
+Student Name: SAU TING LAM 
+Student Name: 200594390
+Candidate Number: LX1366
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <link rel="shortcut icon" href="img/yogamindicon.ico"/> <!--Original Logo designed -->
+  <title>Wireframe | Yoga Mind </title>
+
+  <meta charset="utf-8">
+  <meta name="description" content="This is a website for a community of people interested in yoga.">
+  <meta name="author" content="Lam Sau Ting">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="Yogo Mind">
+
+  
+  <!-- import CSS -->  
+  <link href ="css/style.css" link rel="stylesheet" type="text/css"/>
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- import jQuery -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+<body>
+    
+    <div class="grid-container-index">
+
+        <!-- Header contains logo -->
+        <header id="logo" class="top-bar">
+            <a href="index.html"><img src="img/yogamindlogo.png" alt="Yoga Mind logo" width="100%"></a>
+        </header>
+
+        <diV id="page-header" class="top-bar">
+            <h1> Wireframe </h1>
+        </div>
+
+        <!-- Icons for cart, user login -->
+        <section id="user-icons" class="top-bar"> </section>
+        
+        <div id="welcome">
+            <p>Wireframe -- Web Version</p>
+        </div>
+ 
+        <section id="wireframe">          
+            <!-- Gallery of 4 small images on the left. With the JavaScript code, we can change photo by clicking the small thumbnail photos. Learned from the course "Responsive Website Basics: Code with HTML, CSS, and JavaScript" from Coursera. Made some modify of the size, images and class. -->
+            <div class="wireframe-content">
+                <p class="wireframe-title">Home Page</p>
+                <img class="crop-wireframe" src="img/documentation/Home Page.png" alt="Home Page" />
+                <p class="wireframe-title">Yoga Poses</p>
+                <img class="crop-wireframe" src="img/documentation/Yoga Poses.png" alt="Yoga Poses" />
+                <p class="wireframe-title">Online Class</p>
+                <img class="crop-wireframe" src="img/documentation/Online Class.png" alt="Online Class" />
+                <p class="wireframe-title">Healthy Diet</p>
+                <img class="crop-wireframe" src="img/documentation/Healthy Diet.png" alt="Healthy Diet" />
+                <p class="wireframe-title">Shop</p>
+                <img class="crop-wireframe" src="img/documentation/Shop.png" alt="Shop" />
+            </div>
+
+        </section>
+
+        <!-- Big main picture -->
+        <section id="big-wireframe">
+            <img src="img/documentation/Home Page.png" alt="Home Page"/>
+        </section>
+
+        <script>
+            //when we click on the thumbnail, we set the src attribute of the big image to be the same as the src of the image we have clicked on(this)
+            $(".crop-wireframe").click(function(){
+                $("#big-wireframe img").attr('src',$(this).attr('src'));
+            });
+        </script>
+
+        <div id="welcome2">
+            <p>Wireframe -- Phone Version</p>
+        </div>
+
+        <section id="wireframephone">          
+            <!-- Gallery of 4 small images on the left. With the JavaScript code, we can change photo by clicking the small thumbnail photos. Learned from the course "Responsive Website Basics: Code with HTML, CSS, and JavaScript" from Coursera. Made some modify of the size, images and class. -->
+            <div class="wireframephone-content">
+                <p class="wireframe-title">Home Page</p>
+                <img class="crop-wireframe" src="img/documentation/iPhone 11 Pro Max - Home.png" alt="Home Page" />
+                <p class="wireframe-title">Yoga Poses</p>
+                <img class="crop-wireframe" src="img/documentation/iPhone 11 Pro Max - Yoga Poses.png" alt="Yoga Poses" />
+                <p class="wireframe-title">Online Class</p>
+                <img class="crop-wireframe" src="img/documentation/iPhone 11 Pro Max - Online Class.png" alt="Online Class" />
+                <p class="wireframe-title">Healthy Diet</p>
+                <img class="crop-wireframe" src="img/documentation/iPhone 11 Pro Max - Healthy Diet.png" alt="Healthy Diet" />
+                <p class="wireframe-title">Shop</p>
+                <img class="crop-wireframe" src="img/documentation/iPhone 11 Pro Max - Shop.png" alt="Shop" />
+                <br>
+            </div>
+
+        </section>
+
+        <!-- Big main picture -->
+        <section id="big-wireframephone">
+            <img src="img/documentation/iPhone 11 Pro Max - Home.png" alt="Home Page"/>
+        </section>
+
+        <script>
+            //when we click on the thumbnail, we set the src attribute of the big image to be the same as the src of the image we have clicked on(this)
+            $(".crop-wireframe").click(function(){
+                $("#big-wireframephone img").attr('src',$(this).attr('src'));
+            });
+        </script>
+
+
+        <!-- Footer: provide more extra information of the yoga site -->
+        <footer id="footer">
+            <!-- First column: logo  -->
+            <div id="footer1">
+                <a href="index.html"><img src="img/yogamindlogo.png" alt="Yoga Mind logo" width="80%"></a>
+                
+            </div>
+
+            <!-- Second column: wireframe and report -->
+            <div id="footer2">
+                <p>Addtional information:</p>
+                <p><a href="wireframe.html">Wireframe</a></p>
+                <p><a href="report.html">Report</a></p>
+                <p><a href="sitemap.html">Sitemap</a></p>
+            </div>
+            
+            <!-- Third column: Sitemap -->
+            <nav id="footer3">               
+                <p><a href="index.html">Homepage</a></p>
+                <p><a href="yogaposes.html">Yoga Poses</a></p>
+                <p><a href="onlineclass.html">Online Class</a></p>
+                <p><a href="healthydiet.html">Healthy Diet</a></p>                              
+                <p><a href="shop.html">Shop</a></p>                                            
+            </nav>                                        
+        </footer>
+    </div>
+</body>
+
+</html>
